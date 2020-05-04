@@ -10,7 +10,10 @@ import javax.enterprise.context.RequestScoped;
 
 /**
  *
- * @author ANDERSON
+ * @author ANDERSON SUAREZ ALBERT CHARRY
+ *
+ * clase managed para la vista index.xhtml 
+ * esta clase contiene getter y setter de la variables requeridas al momento del uso del programa
  */
 @Named(value = "index")
 @RequestScoped
@@ -88,6 +91,10 @@ public class Index {
     private String idiomas[];
     private int diasT;
     private long sueldoB;
+    
+    //*contructor de la clase Index
+    
     public Index() {
+   
     }    
 }

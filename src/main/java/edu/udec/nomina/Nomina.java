@@ -11,11 +11,15 @@ import javax.inject.Inject;
 
 /**
  *
- * @author ANDERSON
+ * @author ANDERSON SUAREZ ALBERT CHARRY
+ * 
+ *clase managed para vista nomina.xhtml
+ * clase en la que se inyecta las variables de Index.java
  */
 @Named(value = "nomina")
 @RequestScoped
 public class Nomina {
+  
     private String nombre;
     private String apellido;
     private int diasT;
@@ -24,8 +28,11 @@ public class Nomina {
     private int idiomas;
     private long nomina;
     private String nivelEE;
+    
+    //* anotacion que permite hcer la inyeccion de dependencias de la clase index
     @Inject
-    private Index index;
+     private Index index;
+    
     public long getNomina(){
         return nomina;
     }
@@ -97,6 +104,8 @@ public class Nomina {
         this.nivelEE = nivelEE;
     }
     
+    
+    //*metodo encargado de calcular la nomina del empleado
     public String calcular(){
         nombre = index.getNombre();
         apellido = index.getApellido();
@@ -105,6 +114,7 @@ public class Nomina {
         nivelE = 0;
         nivelEE = index.getNivelE();
         idiomas = index.getIdiomas().length;
+        
         if(index.getNivelE().equals("primaria")){
             nivelE = 0;
         }else if(index.getNivelE().equals("secundaria")){
