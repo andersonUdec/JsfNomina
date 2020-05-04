@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <img src="resources/logo.jpg"/>
+        <h:form>
+            <h:outputLabel for="txtNombre" value="Nombre: "/>
+            <h:outputLabel for="txtNombre" value="#{nomina.nombre}"/>
+        </h:form>  
+        <h:form>    
+            <h:outputLabel for="txtApellido" value="Apellido: "/>
+            <h:outputLabel for="txtApellido" value="#{nomina.apellido}"/>
+        </h:form>
+        <h:form> 
+            <h:outputLabel for="txtDiasT" value="Dias trabajados: "/>
+            <h:outputLabel for="txtDiasT" value="#{nomina.diasT}"/>
+        </h:form>
+        <h:form> 
+            <h:outputLabel for="txtIdiomas" value="Idiomas hablados: "/>
+            <h:outputLabel for="txtIdiomas" value="#{nomina.idiomas}"/>
+        </h:form> 
+        <h:form> 
+            <h:outputLabel for="txtNivelE" value="Nivel de estdudio: "/>
+            <h:outputLabel for="txtNivelE" value="#{nomina.nivelEE}"/>
+        </h:form>  
+        <h:form>     
+            <h:outputLabel for="txtSueldoB" value="Sueldo base: "/>
+            <h:outputLabel for="txtSueldoB" value="#{nomina.sueldoB}"/>
+        </h:form>   
+        <h:form> 
+            <h:outputLabel for="txtNomina" value="Nomina total: "/>
+            <h:outputLabel for="txtNomina" value="#{nomina.nomina}"/>
+        </h:form>
+    </h:body>
+</html>
+
